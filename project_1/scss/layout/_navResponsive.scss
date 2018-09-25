@@ -1,0 +1,44 @@
+.dropdown{
+    /** chỉnh lại padding*/
+    .dropdown-toggle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height:100%;
+        i{
+            font-size:35px;
+        }
+        &:after{
+            display:none;
+        }
+    }
+    .dropdown-menu{
+        width:100%;
+        border:0;
+        /*Chỉnh lại màu của dropdown-item*/
+     
+        .dropdown-item{
+            color: white;
+            font-size: 35px;
+            &:hover{
+                color: $color-blue;
+                transition:all 0.5s ease;
+            }
+        }
+    }
+}
+
+.nav_responsive{
+    li{
+        border-right:2px solid black;
+        a{
+            justify-content: center;
+            font-size: 30px;
+            color:white;
+            .navresp_font{
+                font-size:13px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        }
+    }
+}
